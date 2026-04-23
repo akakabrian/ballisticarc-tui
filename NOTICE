@@ -1,0 +1,19 @@
+scorched-earth-tui
+==================
+
+This project is a clean-room terminal reimplementation of the
+1991 turn-based artillery game "Scorched Earth", originally
+designed and developed by Wendell Hicken.
+
+No code, art, sound, or data was copied from the original game
+or any subsequent port. The implementation was reconstructed
+from publicly available design documentation — the in-game help
+pages, the shareware documentation, and third-party feature
+write-ups. All re-derived.
+
+All original code in this repository is Copyright (c) 2026
+Brian Akaka and contributors, released under the MIT License
+(see LICENSE).
+
+"Scorched Earth" and all associated trademarks remain property
+of Wendell Hicken.
