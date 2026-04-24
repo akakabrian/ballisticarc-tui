@@ -3,11 +3,11 @@ from __future__ import annotations
 
 import argparse
 
-from scorched_earth_tui.app import run
+from ballisticarc_tui.app import run
 
 
 def main() -> None:
-    p = argparse.ArgumentParser(prog="scorched-earth-tui")
+    p = argparse.ArgumentParser(prog="ballisticarc-tui")
     p.parse_args()
     run()
 

@@ -1,4 +1,4 @@
-"""Perf benchmarks for scorched-earth-tui."""
+"""Perf benchmarks for ballisticarc-tui."""
 from __future__ import annotations
 
 import asyncio
@@ -9,8 +9,8 @@ import time
 
 os.environ["XDG_DATA_HOME"] = tempfile.mkdtemp(prefix="scorched-perf-")
 
-from scorched_earth_tui.app import ScorchedEarthApp  # noqa: E402
-from scorched_earth_tui.engine import Engine, Tank  # noqa: E402
+from ballisticarc_tui.app import ScorchedEarthApp  # noqa: E402
+from ballisticarc_tui.engine import Engine, Tank  # noqa: E402
 
 
 def _time_it(fn, iters: int) -> tuple[float, float]:
@@ -59,7 +59,7 @@ async def bench_render_line() -> None:
 
 
 def main() -> None:
-    print("scorched-earth-tui perf baseline")
+    print("ballisticarc-tui perf baseline")
     print("-" * 40)
     bench_engine_tick()
     bench_snapshot()

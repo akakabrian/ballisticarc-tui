@@ -1,4 +1,4 @@
-"""Textual app for scorched-earth-tui.
+"""Textual app for ballisticarc-tui.
 
 Layout: BattlefieldView fills most of the screen; a right-rail
 StatusPanel shows the current tank, angle/power, wind, weapon, and

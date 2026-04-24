@@ -17,8 +17,8 @@ from typing import Awaitable, Callable
 
 os.environ["XDG_DATA_HOME"] = _tempfile.mkdtemp(prefix="scorched-qa-")
 
-from scorched_earth_tui.app import ScorchedEarthApp  # noqa: E402
-from scorched_earth_tui.engine import (  # noqa: E402
+from ballisticarc_tui.app import ScorchedEarthApp  # noqa: E402
+from ballisticarc_tui.engine import (  # noqa: E402
     ANGLE_DEFAULT,
     FIELD_H,
     FIELD_W,
@@ -29,8 +29,8 @@ from scorched_earth_tui.engine import (  # noqa: E402
     Tank,
     starter_inventory,
 )
-from scorched_earth_tui import ai as ai_mod  # noqa: E402
-from scorched_earth_tui import state as state_mod  # noqa: E402
+from ballisticarc_tui import ai as ai_mod  # noqa: E402
+from ballisticarc_tui import state as state_mod  # noqa: E402
 
 OUT = Path(__file__).resolve().parent / "out"
 OUT.mkdir(exist_ok=True)
@@ -200,7 +200,7 @@ async def s_shop_buy_and_sell(app, pilot):
     e = _make_engine_2p()
     t = e.tanks[0]
     t.gold = 10_000
-    from scorched_earth_tui.screens import ShopScreen
+    from ballisticarc_tui.screens import ShopScreen
     s = ShopScreen(e, 0)
     before = t.weapons.get("missile", 0)
     ok = s._buy("missile", 2)
@@ -284,7 +284,7 @@ async def s_pause_halts_sim(app, pilot):
 
 
 async def s_help_screen_opens(app, pilot):
-    from scorched_earth_tui.screens import HelpScreen
+    from ballisticarc_tui.screens import HelpScreen
     await pilot.press("question_mark")
     await pilot.pause()
     assert isinstance(app.screen, HelpScreen), \
@@ -342,7 +342,7 @@ async def s_new_game_resets(app, pilot):
 
 
 async def s_weapon_picker_opens(app, pilot):
-    from scorched_earth_tui.screens import WeaponPickerScreen
+    from ballisticarc_tui.screens import WeaponPickerScreen
     await pilot.press("e")
     await pilot.pause()
     assert isinstance(app.screen, WeaponPickerScreen)

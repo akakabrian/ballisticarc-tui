@@ -1,6 +1,6 @@
-"""Persistence for scorched-earth-tui — high score + sound toggle.
+"""Persistence for ballisticarc-tui — high score + sound toggle.
 
-Stored in `$XDG_DATA_HOME/scorched-earth-tui/state.json`.
+Stored in `$XDG_DATA_HOME/ballisticarc-tui/state.json`.
 """
 from __future__ import annotations
 
@@ -13,8 +13,8 @@ from typing import Any
 def _data_dir() -> Path:
     base = os.environ.get("XDG_DATA_HOME")
     if base:
-        return Path(base) / "scorched-earth-tui"
-    return Path.home() / ".local" / "share" / "scorched-earth-tui"
+        return Path(base) / "ballisticarc-tui"
+    return Path.home() / ".local" / "share" / "ballisticarc-tui"
 
 
 def state_path() -> Path:

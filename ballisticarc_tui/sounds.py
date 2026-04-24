@@ -1,4 +1,4 @@
-"""Optional synth sounds for scorched-earth-tui.
+"""Optional synth sounds for ballisticarc-tui.
 
 Same pattern as missile-command-tui / space-invaders-tui: stdlib
 ``wave`` synth, fire-and-forget ``paplay`` / ``aplay`` / ``afplay``,
@@ -27,7 +27,7 @@ for _cmd in ("paplay", "aplay", "afplay"):
 
 def _runtime_dir() -> Path:
     base = os.environ.get("XDG_RUNTIME_DIR") or os.environ.get("TMPDIR") or "/tmp"
-    d = Path(base) / "scorched-earth-tui-sounds"
+    d = Path(base) / "ballisticarc-tui-sounds"
     d.mkdir(parents=True, exist_ok=True)
     return d
 

@@ -19,9 +19,9 @@ import traceback
 
 os.environ["XDG_DATA_HOME"] = tempfile.mkdtemp(prefix="scorched-play-")
 
-from scorched_earth_tui.app import ScorchedEarthApp  # noqa: E402
-from scorched_earth_tui.engine import Engine, Tank  # noqa: E402
-from scorched_earth_tui.screens import RoundOverScreen, ShopScreen  # noqa: E402
+from ballisticarc_tui.app import ScorchedEarthApp  # noqa: E402
+from ballisticarc_tui.engine import Engine, Tank  # noqa: E402
+from ballisticarc_tui.screens import RoundOverScreen, ShopScreen  # noqa: E402
 
 
 def _two_tank_app() -> ScorchedEarthApp:

@@ -1,4 +1,4 @@
-# scorched-earth-tui — Design Decisions
+# ballisticarc-tui — Design Decisions
 
 Clean-room terminal port of Wendell Hicken's 1991 turn-based
 artillery game **Scorched Earth**. Records the judgment calls
@@ -237,7 +237,7 @@ non-conflicting keys (`+`/`-`, letters) per the skill gotcha.
 
 ## 12. Persistence
 
-Stored in `$XDG_DATA_HOME/scorched-earth-tui/state.json`:
+Stored in `$XDG_DATA_HOME/ballisticarc-tui/state.json`:
 
     {
       "high_score":   123450,
@@ -284,7 +284,7 @@ Skipped with rationale (v1):
 
 ## 14. Reference layout match
 
-Package name `scorched_earth_tui`. Files modeled on
+Package name `ballisticarc_tui`. Files modeled on
 missile-command-tui's tick-driven engine + screens/sounds/
 state/sprites split. Tests: `qa.py` with Pilot scenarios,
 `perf.py` with bench targets. Sibling projects in

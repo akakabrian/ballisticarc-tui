@@ -1,4 +1,4 @@
-"""scorched-earth-tui — terminal clean-room artillery game.
+"""ballisticarc-tui — terminal clean-room artillery game.
 
 See DECISIONS.md for design rationale.
 """

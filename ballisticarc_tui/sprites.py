@@ -1,4 +1,4 @@
-"""Glyphs + pre-parsed styles for scorched-earth-tui.
+"""Glyphs + pre-parsed styles for ballisticarc-tui.
 
 Night-sky background, layered earth (green top-crust, brown interior),
 per-tank colours, hot-orange explosions, dim projectile trails.

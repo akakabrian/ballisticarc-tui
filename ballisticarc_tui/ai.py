@@ -1,4 +1,4 @@
-"""AI targeting for scorched-earth-tui — 4 difficulty tiers.
+"""AI targeting for ballisticarc-tui — 4 difficulty tiers.
 
 See DECISIONS.md §9 for the ladder:
 
