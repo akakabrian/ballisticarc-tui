@@ -1,4 +1,7 @@
 # ballisticarc-tui
+
+> Inspired by Scorched Earth (1991, Wendell Hicken). Trademarks belong to their respective owners. Unaffiliated fan project.
+
 Angle. Power. Fire.
 
 ![Hero](screenshots/hero.svg)
